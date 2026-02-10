@@ -101,3 +101,14 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the Logo and Nav vertically */
+        text-align: center;
+    }
+    
+    .nav-links {
+        padding: 0;
+        margin-top: 10px;
+    }
+}
