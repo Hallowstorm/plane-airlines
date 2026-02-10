@@ -16,6 +16,63 @@
 <a href="contact.html">Contact</a>
 </nav>
 </header>
+   <style>
+        body { background: #f4f4f4; color: #333; }
+        .map-container {
+            border: 8px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+        /* Zoom effect on map when page loads */
+        .map-container:hover { transform: scale(1.02); }
+        
+        .dest-card {
+            background: white;
+            transition: all 0.3s ease;
+        }
+        .dest-card:hover {
+            transform: translateY(-5px) scale(1.05); /* Zoomed focus */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+ <a href="index.html" class="flex items-center text-gray-400 text-xs uppercase tracking-widest mb-6 hover:text-blue-600 transition">
+            <i data-lucide="chevron-left" class="w-4 h-4 mr-1"></i> Back to Home
+        </a>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Our Global Reach</h2>
+            <p class="text-gray-500">Explore the world with our premium flight paths.</p>
+        </div>
+
+        <div class="flex justify-center mb-16">
+            <div class="map-container rounded-xl overflow-hidden max-w-4xl w-full bg-gray-200">
+                
+                <img src="5.jpg" alt="SkyWay Global Map" class="w-full h-auto block">
+                </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="dest-card p-6 rounded-lg border">
+                <h3 class="font-bold text-xl mb-2 text-blue-600">abuja</h3>
+                <p class="text-gray-600 text-sm">Experience the classic quiet of nigeria capital.</p>
+            </div>
+            <div class="dest-card p-6 rounded-lg border">
+                <h3 class="font-bold text-xl mb-2 text-blue-600">benin</h3>
+                <p class="text-gray-600 text-sm">A perfect blend of tradition and urbanism.</p>
+            </div>
+            <div class="dest-card p-6 rounded-lg border">
+                <h3 class="font-bold text-xl mb-2 text-blue-600">lagos</h3>
+                <p class="text-gray-600 text-sm">The city that never sleeps, right at your fingertips.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-10 text-gray-400 border-t">
+        <p>© 2026 Plane Airlines</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
 
 </body>
 </html>
