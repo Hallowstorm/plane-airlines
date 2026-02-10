@@ -25,15 +25,37 @@ header .container {
     align-items: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 20px;
-    font-weight: bold;
+ /* Container to keep content centered */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Puts Title on left, Nav on right */
+    align-items: center;
 }
 
-nav a:hover {
-    color: #007bff; /* Standard blue link color */
+header {
+    background: #1a2a6c; /* Deep blue airline theme */
+    color: white;
+    padding: 1rem 0;
+}
+
+/* The actual "Operation" of the Navbar */
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex;    /* Makes list items horizontal */
+    gap: 20px;        /* Spacing between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #fdbb2d; /* Changes color when you hover */
 }
 
 /* Hero Section */
